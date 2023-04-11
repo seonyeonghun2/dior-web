@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: arial, "돋움";
+    background: #000;
+}
+
+.d-none {
+    display: none;
+}
+
+form, fieldset {
+    border: 0;
+}
+
+a, a:link {
+    text-decoration: none;
+    color: white;
+}
+
+ul, ol {
+    list-style: none;  /* list-style-type (긴), list-style (짧은) */
+}

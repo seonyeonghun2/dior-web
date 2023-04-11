@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+    <h1 class="d-none">Dior 웹사이트 메인</h1>
+    <header>
+        <div class="header-wrap">
+            <div class="video-wrap">
+                <video src="media/intro.mp4" autoplay muted loop></video>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Dior 브랜드 아이덴티티">
+            </div>
+            <div class="search_form">
+                <form autocomplete="off" id="my_form">
+                    <fieldset>
+                        <legend class="d-none">상품 검색 폼</legend>
+                        <label for="keyword" class="screen_out">검색어</label>
+                        <div class="search">
+                            <input type="text" maxlength="30" id="keyword" name="keyword" placeholder="Jadore in joy를 검색하세요">
+                            <button type="submit">search</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul id="gnb"><!-- gnb : global navigation bar-->
+            <li><a href="#">향수</a>
+                <ul class="lnb"><!-- lnb: local navigation bar-->
+                    <li><a href="#">남성용</a></li>
+                    <li><a href="#">여성용</a></li>
+                </ul>
+            </li>
+            <li><a href="#">메이크업</a></li>
+            <li><a href="#">스킨케어</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <h2 class="d-none">Dior 베스트 아이템과 구매 후기</h2>
+        <article>
+            <h3 class="article-title">best item</h3>
+            <div class="items">
+                <img src="images/best_img1.jpg" alt="">
+                <img src="images/best_img2.jpg" alt="">
+                <img src="images/best_img3.jpg" alt="">
+            </div>
+        </article>
+        <article>
+            <h3 class="article-title">reviews</h3>
+            <div class="reviews">
+                <div><img src="images/review_img1.jpg" alt=""></div>
+                <div><img src="images/review_img2.jpg" alt=""></div>
+                <div><img src="images/review_img3.jpg" alt=""></div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="logo2">
+            <img src="images/footer_logo.png" alt="dior">
+        </div>
+        <ul class="links">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">배송조회</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+        </ul>
+        <p class="info">copyright &copy; <span class="brand">dior</span>. all rights reserved.</p>
+    </footer>
+    <script>
+        // javascript : 자바스크립트 vs java | 자바
+        // dom select : dom 요소를 선택한다.
+        const form = document.querySelector("#my_form");
+        form.addEventListener("submit", function(e){
+            e.preventDefault(); // 기본 이벤트(e)를 중지
+            alert("검색어를 입력하세요!");
+            document.querySelector("#keyword").focus(); // (입력칸) 포커스를 만들어줘!
+        });
+    </script>
+</body>
+</html>
